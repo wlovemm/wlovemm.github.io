@@ -16,7 +16,11 @@
                 <script type="text/javascript">
                  function changeMusic(){
 			var a=$("#myMusic")[0].src;
-			alert(a);
+			if(a=="https://wlovemm.github.io/renxi.mp3"){
+                                                 $("#myMusic").attr("src","zmjhb.mp3");
+                                                }else{
+                                                 $("#myMusic").attr("src","renxi.mp3");
+                                             }
 		}
 
                </script>
