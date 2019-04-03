@@ -13,6 +13,13 @@
 	<script type="text/javascript" src="./renxi/jscex-async-powerpack.min.js"></script>
 	<script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
 	<script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
+                <script type="text/javascript">
+                 function changeMusic(){
+			var a=$("#myMusic")[0].src;
+			alert(a);
+		}
+
+               </script>
     <style type="text/css">
                  h1{
     		color: red;
@@ -25,11 +32,11 @@
 	</style>
 </head>
 <body>
-	<audio autoplay="autopaly">
-	<source src="renxi.mp3" type="audio/mp3" /></audio>  
+	<audio autoplay="autopaly" src="renxi.mp3" id="myMusic"></audio>   
 	<div id="main">
 <center>
 	<h1>苗&伟</h1>
+                <input type="button" value="切换音乐" onclick="changeMusic();"/ id="myInput">
 </center>
 	<div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
 		<div id="wrap">
